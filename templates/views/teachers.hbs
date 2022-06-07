@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headers}}
+<body>
+    {{>navbar}}
+     <h1 class="trade-header" id="trade-header">{{name}}</h1>
+     <hr>
+    <div class="root-container card-container normal" id="root-container">
+         {{#each teachers}}
+     <div class="card testimonial-card mt-2 mb-3">
+      <div class="card-up aqua-gradient"></div>
+      <div class="avatar mx-auto white">
+        <img src="../img/avtar2.jpg" class="rounded-circle img-fluid"
+          alt="avatar">
+      </div>
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bold">{{this.name}}</h4>
+        <h4>{{this.sub}}</h4>
+        <div class="card-links">
+        <a href="mailto:{{this.mail}}"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+     {{/each}}
+    </div>
+
+  <script src="../js/main.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+</body>
+</html>

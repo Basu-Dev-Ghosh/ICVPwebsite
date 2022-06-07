@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Piazzolla:wght@200;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&family=Quattrocento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --theme:#D7263D;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.navbar-brand{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 28px;
+    font-weight: bolder;
+    color:red;
+    margin-left: 80px;
+}
+.search{
+    margin-left: auto;
+}
+.search-btn{
+    background-color: inherit;
+    overflow: hidden;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.fa-search{
+color: var(--theme);
+font-size: 25px;
+}
+.items{
+    background-color:#fff;
+}
+.items a button{
+   font-size: 20px;
+    padding: 20px;
+    color: #000;
+    font-family: 'Quattrocento', serif;
+}
+.items a button:hover{
+    background-color: var(--theme);
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fff;
+}
+.root-container{
+    display: flex;
+}
+.root-container .text{
+ width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ text-align: center;
+ margin-top: 100px;
+}
+.root-container .text h1{
+    font-family: 'Quattrocento', serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.root-container .text h1 span{
+    font-family: 'Quattrocento', serif;
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--theme);
+}
+.root-container .text p{
+    font-family: 'Quattrocento', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.root-container .text .buttons a button{
+    padding: 15px;
+    margin: 15px;
+    width: 180px;
+    text-align: center;
+    background-color: var(--theme);
+    color: #fff;
+}
+.root-container .text .buttons a button:hover{
+    background-color: #fff;
+    color: var(--theme);
+}
+
+.root-container .img{
+ width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.hide{
+  display: none !important;
+}
+.root-container .img img{
+    width: 400px;
+    margin-top: 100px;
+}
+.navbar-toggler .fas{
+    padding: 10px;
+    color: var(--theme);
+    font-size: 35px;  
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+.card-container a:hover .card{
+    background-color: var(--theme);
+    color: #fff;
+}
+.card-container a:hover .card-body h1{
+    color: #fff;
+}
+.card-container a:hover .card-body h5{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fff;
+}
+.card{
+    width: 250px;
+    min-height: 250px;
+    margin: 40px 80px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-body h1{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    color:red;
+}
+.card-body h5{
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+}
+.trade-header{
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quattrocento', serif;
+    letter-spacing: 6px;
+    font-size: 80px;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+}
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  .card-body h4,h3,h2{
+    font-family: 'Quattrocento', serif;
+    letter-spacing: 3px;
+    font-size: 19px;
+    font-weight: bolder;
+  } 
+  .aqua-gradient {
+    background: linear-gradient(40deg, #ff2600, #c10000) !important;
+  }
+  
+  .testimonial-card .avatar {
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 60%;
+  }
+ .card-body .card-links{
+      display: flex;
+      width: 100px;
+      justify-content:space-around;
+      flex-direction: row;
+      align-items: center;
+  }
+  .card-links a i{
+      font-size: 30px;
+      margin:20px 20px;
+      color:var(--theme)
+  }
+  .table{
+  max-width: 800px;
+  font-family: 'Quattrocento', serif;
+
+  }
+  thead tr th{
+     font-size: 30px;
+     padding: 40px !important;
+     margin: 0 40px !important;
+     text-align: center;
+  }
+  tbody{
+      text-align: center !important;
+  }
+  tbody tr td a i{
+      font-size: 40px;
+      color: var(--theme);
+  }
+  tbody tr th{
+      font-size: 20px;
+  }
+
+  .fa-plus,.fa-trash,.fa-book{
+      font-size: 30px;
+      padding: 20px;
+      color: var(--theme);
+  }
+ .card-body:hover .fa-plus{
+     color: #fff;
+ }
+ .card-body:hover .fa-trash{
+     color: #fff;
+ }
+ .card-body:hover .fa-book{
+     color: #fff;
+ }
+.lb{
+    text-align: center;
+    font-family: 'Quattrocento', serif !important;
+}
+.addbookform input{
+    width: 300px;
+}
+.addbookform button{
+    background-color: var(--theme);
+    padding: 15px;
+    transition: .2s;
+}
+.card-img-top{
+    height: 250px;
+}
+.book-title{
+    font-size: 40px;
+    padding: 10px;
+    color: var(--theme);
+}
+.addbookform button:hover{
+    background-color:#fff;
+    padding: 15px;
+    color: var(--theme);
+}
+.deletebooks{
+   margin: 20px auto;
+}
+.form-outline input{
+    width:240px;
+    padding: 13px !important;
+}
+.ptag{
+    font-size: 15px;
+    overflow:auto;
+    text-overflow: ellipsis !important;
+}
+.ptag p{
+    word-wrap: break-word;
+    white-space:nowrap;
+}
+
+@media screen and (max-width:520px){
+    .navbar-brand{
+        margin-left: 0;
+    }
+    .search{
+        align-items: center;
+    }
+.search input{
+ width: 140px !important;
+}
+}
+
+@media screen and (max-width:1112px) {
+    .root-container .text{
+        width: 100%;
+        }
+   .root-container .text h1
+   {
+       font-size: 40px;
+       text-align: center;
+   }
+   .root-container .text p{
+       font-size: 14px;
+   }
+    .root-container .img
+    {
+            display: none;
+    }   
+   
+}
+@media screen and (min-width:1112px) and (max-width:1200px){
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+}

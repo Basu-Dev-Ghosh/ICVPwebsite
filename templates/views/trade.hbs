@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headers}}
+<body>
+    {{>navbar}}
+     <h1 class="trade-header" id="trade-header">{{name}}</h1>
+     <hr>
+    <div class="root-container card-container normal" id="root-container">
+     
+    <a href="{{name}}/teachers">
+        <div class="card">
+         <div class="card-body d-flex">
+           <h1 class="card-title">Teachers</h1>
+         </div>
+        </div>
+    </a>
+    <a href="{{name}}/students">
+        <div class="card">
+         <div class="card-body d-flex">
+           <h1 class="card-title">Students</h1>
+         </div>
+        </div>
+    </a>
+    <a href="{{name}}/rooms">
+        <div class="card">
+         <div class="card-body d-flex">
+           <h1 class="card-title">Rooms</h1>
+         </div>
+        </div>
+    </a>
+    <a href="{{name}}/syllabus">
+        <div class="card">
+         <div class="card-body d-flex">
+           <h1 class="card-title">Syllabus</h1>
+         </div>
+        </div>
+    </a>
+    <a href="{{name}}/books">
+        <div class="card">
+         <div class="card-body d-flex">
+           <h1 class="card-title">Books</h1>
+         </div>
+        </div>
+    </a>
+    </div>
+
+  <script src="./js/main.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+</body>
+</html>

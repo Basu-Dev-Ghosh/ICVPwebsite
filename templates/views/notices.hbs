@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headers}}
+<body>
+    {{>navbar}}
+     <h3 class="trade-header" id="trade-header">Notice Board</h3>
+     <hr>
+    <div class="root-container card-container normal" id="root-container">
+    {{#each notice}}
+     <div class="card" style="width: 18rem;">
+  <img src="../img/img6.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+  <div class="card-body ptag">
+      <h2 class="book-title">{{this.title}}</h2>
+      <p>{{this.subject}}</p>
+  </div>
+</div>
+     {{/each}}
+    </div>
+
+  <script src="../js/main.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+</body>
+</html>

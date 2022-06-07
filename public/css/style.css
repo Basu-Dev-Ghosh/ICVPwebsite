@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Piazzolla:wght@200;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&family=Quattrocento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --theme:#D7263D;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 288;
+}
+.navbar-brand{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.btn{
+    margin-left: 30px;
+    background-color: var(--theme);
+    color: #fff;
+}
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+.btn:hover a{
+    color: #000;
+}
+.btn-theme{
+    background-color: var(--theme);
+    color: #fff;
+}
+.root-container{
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.root-container .text{
+width: 50%;
+display: flex;
+margin-top: 100px !important;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.root-container .text h1{
+    font-size: 60px;
+    font-family: 'Quattrocento', serif;
+}
+.root-container .text p{
+    font-size: 25px;
+    font-family: 'Quattrocento', serif;
+    letter-spacing:5px ;
+}
+.root-container .text h1 span{
+    color: var(--theme);
+    font-size: 90px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bolder;
+}
+.root-container .text .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: inherit;
+    padding: 30px;
+}
+.root-container .text .buttons .btn{
+    padding: 15px;
+    width: 100px;
+}
+.root-container .text .buttons .btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+.root-container .text .buttons .btn:hover a{
+    color: #000;
+   
+}
+.root-container .text .btn{
+    background-color: var(--theme);
+    color: #fff;
+    margin-right: 20px;
+}
+
+   
+.root-container .img{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.root-container .img img{
+width: 500px;
+}
+.mte-5{
+    margin-top: 130px;
+}
+.form-container{
+    /* background-color: red; */
+    width: 500px;
+}
+.form-control{
+   width: 100%;
+}
+.btn-submit{
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    margin-top: 12px;
+}
+
+
+@media screen and (max-width:1112px) {
+    .root-container{
+        height: 65vh;
+    }
+    .root-container .text{
+        width: 100%;
+        margin-top: 70px;
+        }
+   .root-container .text h1
+   {
+       font-size: 70px;
+       text-align: center;
+   }
+   .root-container .text h1 span{
+       font-size: 90px;
+   }
+   .root-container .text p{
+       font-size: 10px;
+   }
+        .root-container .img{
+            display: none;
+        }
+     .form-container{
+         width: 300px;
+     }   
+}

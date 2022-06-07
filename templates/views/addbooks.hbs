@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headers}}
+<body>
+    {{>adminnavbar}}
+    <h1 class="trade-header" id="trade-header">Add Book</h1>
+     <hr>
+    <div class="root-container card-container normal" id="root-container">
+     <form action="/addbook" class="addbookform" method="POST">
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <input type="text" required id="form4Example1" class="form-control" name="bookname" />
+    <label class="form-label" for="form4Example1">Book Name</label>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="text" required id="form4Example2" class="form-control" name="authorname"/>
+    <label class="form-label" for="form4Example2">Author Name</label>
+  </div>
+
+  <!-- Message input -->
+  <div class="form-outline mb-4">
+    <input type="text" required id="form4Example2" class="form-control" name="sub" />
+    <label class="form-label" for="form4Example2">Subject</label>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Add</button>
+</form>
+    </div>
+
+  <script src="../js/main.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+</body>
+</html>

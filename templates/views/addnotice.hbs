@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headers}}
+<body>
+    {{>adminnavbar}}
+    <h1 class="trade-header" id="trade-header">Add Notice</h1>
+     <hr>
+    <div class="root-container card-container normal" id="root-container">
+     <form action="/addnotice" class="addbookform" method="POST">
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <input type="text" required id="form4Example1" class="form-control" name="title" />
+    <label class="form-label" for="form4Example1">Notice Title</label>
+  </div>
+
+<div class="form-outline">
+  <textarea class="form-control" id="textAreaExample1" name="subject" rows="4"></textarea>
+  <label class="form-label" for="textAreaExample">Enter Notice</label>
+</div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mt-4">Add</button>
+</form>
+    </div>
+
+  <script src="../js/main.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+</body>
+</html>

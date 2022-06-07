@@ -1,0 +1,50 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ICVP</a>
+      <form action="/search" method="POST" class="d-flex input-group w-auto search">
+      <input
+        type="search"
+        class="form-control rounded"
+        placeholder="Search student"
+        aria-label="Search"
+        aria-describedby="search-addon"
+        name="search_name"
+      />
+      
+      <span class="input-group-text border-0" id="search-addon">
+        <button type="submit" class="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+      </span>
+    </form>
+    <button
+      class="navbar-toggler"
+      id="collapse-btn"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarToggleExternalContent4"
+      aria-controls="navbarToggleExternalContent4"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+<div class="collapse" id="navbarToggleExternalContent4">
+  <div class="items shadow-3 p-4">
+    <a href="/home"><button
+        class="btn btn-link btn-block border-bottom m-0"
+      >Home</button></a>
+    <a href="/admin/library"><button
+        class="btn btn-link btn-block border-bottom m-0"
+      >Library</button></a>
+    <a href="/admin/notice"><button
+        class="btn btn-link btn-block border-bottom m-0"
+      >Notice</button></a>
+    <a href="/logout"><button
+        class="btn btn-link btn-block border-bottom m-0"
+      >Log out</button></a>
+  </div>
+
+</div>
